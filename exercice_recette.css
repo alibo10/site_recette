@@ -19,12 +19,11 @@ p.categorie {
 }
 div.page_content {    
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 375px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    /* min-width: 350px; */
     box-shadow: 0px 0px 10px 5px black;
     overflow: visible;
-
 }
 h1 {
     text-align: center;
@@ -41,8 +40,8 @@ p.description{
     width: 100%;
 }
 div.colonne1{
-    display: inline-block;
-    margin-right: 10%;
+    display: block;
+    /*margin-right: 10%;*/
 }
 div.ingredients p {
     text-align: center;
@@ -52,11 +51,11 @@ div.ingredients p {
     font-size: 14px;
 }
 div.colonne2{
-    float: right;
+    /*float: right;*/
 
 }
 div.colonne {
-    width: 45%;
+    /*width: 45%;*/
     margin-top: 20px;
 }
 div.colonne h2 {
@@ -85,15 +84,15 @@ table.infos {
     bottom: 0; 
     color: white; 
     background-color: #6c829dc0; 
-    height: 80px;
+    height: 50px;
 }
 table.infos td {
     text-align: center;
-    font-size: 14px ;
+    font-size: 12px ;
     vertical-align: top;
 }
 table.infos th {
-    font-size: 18px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
@@ -107,6 +106,7 @@ background-color: lightgray;
 }
 div.ingredients {
     padding-top: 10px;
+    display: block;
 }
 table.preparation p.numero {
     background-color: #6c829d;
@@ -135,7 +135,42 @@ table.preparation tr {
     height: 40px;
 }
 
-
+/* styles pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.page_content {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;    
+        min-width: 350px;
+    }
+    table.infos {
+        height: 80px;
+    }
+    table.infos td {
+        font-size: 14px ;
+    }
+    table.infos th {
+        font-size: 18px;
+    }
+    div.colonne1{
+        display: inline-block;
+        margin-right: 10%;
+    }
+    div.colonne2{
+        float: right;
+    }
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    div.page_content {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 30px 30px 30px;    
+        width: 646px;
+    }
+}
 
 
 
